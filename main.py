@@ -22,7 +22,13 @@ intents.message_content = True
 # Then pass it to your bot
 bot = commands.Bot(command_prefix='!', intents=intents, case_insensitive=True)
 
-TOKEN = 'MTIxNzg4ODc4NjI3NzczMjQxMg.GsEICq.rw5srUcimM4SjWgdTbawL0Ddp293v0HABHrrak'
+
+# Load token
+with open("token/token.txt", "r") as token_file:
+    TOKEN = token_file.read().strip()
+
+
+# Load commands
 
 class UserState:
     CHOOSING_LANGUAGE = 1
