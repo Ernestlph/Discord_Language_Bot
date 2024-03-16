@@ -80,7 +80,7 @@ async def Mandarin(ctx):
             "chosen_level": None,
             "chosen_lesson": None,
         }
-        await ctx.send('Ah, Mandarin! Now choose your level with !Level1, !Level2, or !Level3.')
+        await ctx.send('Ah, Mandarin! Now choose your level with !Level1, !Level2, !Level3, !Level4, or !Level5.')
     else:
         await ctx.send("I'm afraid this command is out of context right now.")
 
